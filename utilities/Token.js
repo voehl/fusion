@@ -7,8 +7,7 @@ export function getToken() {
     if (!tokenString) {
         throw new Error('Invalid token');
     }
-    const token = JSON.parse(tokenString);
-
+    return JSON.parse(tokenString);
 }
 
 export function validateToken(token) {
